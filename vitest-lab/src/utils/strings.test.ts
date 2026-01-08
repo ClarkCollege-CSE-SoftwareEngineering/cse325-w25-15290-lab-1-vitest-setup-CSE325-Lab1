@@ -24,6 +24,10 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    // ADDED BY PARKER 
+    it('handles being passed an empty string', () => {
+      expect(slugify('')).toBe('');
+    });
   });
 
   describe('truncate', () => {
@@ -44,6 +48,10 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    // ADDED BY PARKER
+      it('returns the original string if length is equal to maxLength', () => {
+        expect(truncate('Hello', 5)).toBe('Hello');
+      });
   });
 
   describe('capitalize', () => {
@@ -60,6 +68,10 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    // ADDED BY PARKER
+    it('only capitalizes first word if passed a string with multiple words', () => {
+      expect(capitalize('hello world')).toBe('Hello world');
+    });
   });
 
   describe('countWords', () => {
@@ -80,5 +92,9 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    // ADDED BY PARKER
+    it('only counts words separated by spaces', () => {
+      expect(countWords('hello-world')).toBe(1);
+    });
   });
 });
