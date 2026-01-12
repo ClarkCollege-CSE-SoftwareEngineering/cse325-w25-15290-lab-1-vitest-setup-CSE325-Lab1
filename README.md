@@ -643,3 +643,13 @@ If you finish early, try these extensions:
 Push your completed project to GitHub and submit the repository URL through Canvas by the due date.
 
 **Due:** Monday of Week 2 (see Canvas for exact date/time)
+
+## Reflection Question Answers
+
+**2.3:** Tests that are more complex might involve multiple steps / statements. Using the AAA structure can help with understanding what specific components are doing inside a test. Additionally, in an integration test, there may be multiple, sub Describe/It/Expect blocks involved.
+**4.1**
+1. The biggest takeaway for me with comparing unit and integration tests is that unit tests may have intermittent functionality when tested in different environments. Unit tests may function in isolation, but that isn't worth anything if they don't work cohesively in a system, as verified via integration testing.
+2. Both unit tests and integration tests involving slugify would fail
+3. Unit tests provide additional confidence in that they verify that individual unit tests are also passing when used together in a system.
+
+##
