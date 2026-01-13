@@ -712,4 +712,6 @@ Push your completed project to GitHub and submit the repository URL through Canv
 2. Both unit tests and integration tests involving slugify would fail
 3. Unit tests provide additional confidence in that they verify that individual unit tests are also passing when used together in a system.
 
+**Testing Trophy Connection:** I noticed that when adding the integration tests into the lab, the amount of individual tests that were passing went up a significant amount. This is of course expected because we are now running multiple unit tests within each integration test. I can see now why Dodds claims that most of our time should be spent on Integration tests. It is easy to string together multiple unit tests into a larger test, and integration tests also provided additional confidence in that you are assured unit tests are passing when multiple code modules are working together, rather than just in isolation.
+
 ##
