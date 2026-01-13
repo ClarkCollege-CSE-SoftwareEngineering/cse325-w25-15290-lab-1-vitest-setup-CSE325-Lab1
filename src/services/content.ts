@@ -13,7 +13,7 @@ export interface ProcessedArticle {
   author: string;
 }
 
-export function processArticle(article: Article, excerptLength: number): ProcessedArticle {
+export function processArticle(article: Article, excerptLength=100): ProcessedArticle {
   return {
     title: capitalize(article.title),
     slug: slugify(article.title),
@@ -22,7 +22,7 @@ export function processArticle(article: Article, excerptLength: number): Process
   };
 }
 
-export function processArticles(articles: Article[], excerptLength: number): ProcessedArticle[] {
+export function processArticles(articles: Article[], excerptLength=100): ProcessedArticle[] {
   return articles.map(article => processArticle(article, excerptLength));
 }
 
